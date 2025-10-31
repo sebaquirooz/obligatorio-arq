@@ -88,6 +88,9 @@
       <a name="facing" val="north"/>
       <a name="select" val="3"/>
     </comp>
+    <comp lib="4" loc="(200,80)" name="J-K Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
     <comp lib="4" loc="(520,380)" name="Random">
       <a name="appearance" val="classic"/>
       <a name="width" val="3"/>
