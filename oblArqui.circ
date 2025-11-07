@@ -12,6 +12,9 @@
     </tool>
   </lib>
   <lib desc="#Gates" name="1">
+    <tool name="NOT Gate">
+      <a name="facing" val="west"/>
+    </tool>
     <tool name="AND Gate">
       <a name="facing" val="north"/>
     </tool>
@@ -77,7 +80,10 @@
       <a name="addrWidth" val="5"/>
       <a name="appearance" val="classic"/>
     </comp>
+    <comp lib="5" loc="(1020,850)" name="Button"/>
     <comp lib="5" loc="(1030,270)" name="Button"/>
+    <comp lib="5" loc="(1070,830)" name="Button"/>
+    <comp lib="5" loc="(1070,870)" name="Button"/>
     <comp lib="5" loc="(1120,110)" name="Hex Digit Display">
       <a name="labelvisible" val="true"/>
     </comp>
@@ -114,6 +120,10 @@
     </comp>
     <comp lib="5" loc="(1190,620)" name="Button"/>
     <comp lib="5" loc="(1230,110)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(1310,760)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(1360,760)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(1410,760)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(1460,760)" name="Hex Digit Display"/>
     <comp lib="5" loc="(1480,400)" name="LED">
       <a name="color" val="#0000ff"/>
     </comp>
@@ -171,9 +181,11 @@
     </comp>
     <comp loc="(1040,140)" name="contadorReloj"/>
     <comp loc="(1160,400)" name="contadorBin"/>
+    <comp loc="(1290,830)" name="contador2"/>
     <comp loc="(1440,400)" name="PuntajeRecord"/>
     <comp loc="(480,530)" name="movimientoCuadrado"/>
     <comp loc="(810,790)" name="guardarNuevoEstado"/>
+    <wire from="(1020,850)" to="(1070,850)"/>
     <wire from="(1030,270)" to="(1040,270)"/>
     <wire from="(1040,140)" to="(1120,140)"/>
     <wire from="(1040,160)" to="(1180,160)"/>
@@ -205,6 +217,13 @@
     <wire from="(1200,600)" to="(1200,620)"/>
     <wire from="(1200,600)" to="(1220,600)"/>
     <wire from="(1230,110)" to="(1230,180)"/>
+    <wire from="(1290,830)" to="(1310,830)"/>
+    <wire from="(1290,850)" to="(1360,850)"/>
+    <wire from="(1290,870)" to="(1410,870)"/>
+    <wire from="(1290,890)" to="(1460,890)"/>
+    <wire from="(1310,760)" to="(1310,830)"/>
+    <wire from="(1360,760)" to="(1360,850)"/>
+    <wire from="(1410,760)" to="(1410,870)"/>
     <wire from="(1440,400)" to="(1480,400)"/>
     <wire from="(1440,420)" to="(1480,420)"/>
     <wire from="(1440,440)" to="(1480,440)"/>
@@ -215,6 +234,7 @@
     <wire from="(1440,540)" to="(1480,540)"/>
     <wire from="(1440,560)" to="(1480,560)"/>
     <wire from="(1440,580)" to="(1480,580)"/>
+    <wire from="(1460,760)" to="(1460,890)"/>
     <wire from="(240,500)" to="(240,570)"/>
     <wire from="(240,500)" to="(560,500)"/>
     <wire from="(240,570)" to="(260,570)"/>
@@ -488,6 +508,9 @@
     <comp lib="1" loc="(590,600)" name="OR Gate"/>
     <comp lib="1" loc="(820,450)" name="AND Gate">
       <a name="facing" val="north"/>
+    </comp>
+    <comp lib="2" loc="(220,380)" name="Decoder">
+      <a name="select" val="4"/>
     </comp>
     <comp lib="3" loc="(300,480)" name="Comparator">
       <a name="mode" val="unsigned"/>
@@ -814,6 +837,10 @@
       <a name="type" val="output"/>
       <a name="width" val="4"/>
     </comp>
+    <comp lib="0" loc="(290,650)" name="Constant">
+      <a name="value" val="0xa"/>
+      <a name="width" val="4"/>
+    </comp>
     <comp lib="0" loc="(300,790)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
@@ -867,6 +894,15 @@
       <a name="inputs" val="5"/>
     </comp>
     <comp lib="1" loc="(810,830)" name="OR Gate"/>
+    <comp lib="1" loc="(940,520)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="1" loc="(950,300)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="1" loc="(950,750)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
     <comp lib="3" loc="(550,670)" name="Comparator">
       <a name="mode" val="unsigned"/>
       <a name="width" val="4"/>
@@ -906,7 +942,7 @@
       <a name="max" val="0x9"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="4" loc="(860,750)" name="Counter">
+    <comp lib="4" loc="(860,760)" name="Counter">
       <a name="appearance" val="logisim_evolution"/>
       <a name="max" val="0x9"/>
       <a name="width" val="4"/>
@@ -921,18 +957,21 @@
     <wire from="(1050,430)" to="(1140,430)"/>
     <wire from="(1050,590)" to="(1060,590)"/>
     <wire from="(1050,650)" to="(1060,650)"/>
-    <wire from="(1050,800)" to="(1070,800)"/>
-    <wire from="(1050,860)" to="(1060,860)"/>
+    <wire from="(1050,810)" to="(1070,810)"/>
+    <wire from="(1050,870)" to="(1140,870)"/>
     <wire from="(1060,520)" to="(1060,590)"/>
     <wire from="(1060,640)" to="(1060,650)"/>
     <wire from="(1060,640)" to="(1140,640)"/>
-    <wire from="(1060,860)" to="(1060,870)"/>
-    <wire from="(1060,870)" to="(1140,870)"/>
     <wire from="(1070,300)" to="(1070,370)"/>
-    <wire from="(1070,740)" to="(1070,800)"/>
+    <wire from="(1070,750)" to="(1070,810)"/>
+    <wire from="(290,650)" to="(330,650)"/>
     <wire from="(300,780)" to="(300,790)"/>
     <wire from="(300,780)" to="(340,780)"/>
+    <wire from="(330,650)" to="(330,660)"/>
+    <wire from="(330,660)" to="(350,660)"/>
     <wire from="(340,750)" to="(340,780)"/>
+    <wire from="(360,620)" to="(360,640)"/>
+    <wire from="(360,620)" to="(720,620)"/>
     <wire from="(360,680)" to="(360,700)"/>
     <wire from="(360,830)" to="(360,860)"/>
     <wire from="(380,660)" to="(430,660)"/>
@@ -972,7 +1011,9 @@
     <wire from="(640,790)" to="(640,870)"/>
     <wire from="(690,280)" to="(750,280)"/>
     <wire from="(690,770)" to="(740,770)"/>
-    <wire from="(700,850)" to="(760,850)"/>
+    <wire from="(700,850)" to="(720,850)"/>
+    <wire from="(720,620)" to="(720,850)"/>
+    <wire from="(720,850)" to="(760,850)"/>
     <wire from="(740,770)" to="(740,810)"/>
     <wire from="(740,810)" to="(760,810)"/>
     <wire from="(750,110)" to="(750,280)"/>
@@ -982,17 +1023,24 @@
     <wire from="(750,340)" to="(860,340)"/>
     <wire from="(750,560)" to="(750,770)"/>
     <wire from="(750,560)" to="(860,560)"/>
-    <wire from="(750,770)" to="(860,770)"/>
+    <wire from="(750,770)" to="(850,770)"/>
     <wire from="(810,400)" to="(810,520)"/>
     <wire from="(810,400)" to="(860,400)"/>
-    <wire from="(810,520)" to="(1060,520)"/>
-    <wire from="(810,830)" to="(860,830)"/>
+    <wire from="(810,520)" to="(940,520)"/>
+    <wire from="(810,830)" to="(850,830)"/>
     <wire from="(820,170)" to="(820,300)"/>
     <wire from="(820,170)" to="(860,170)"/>
-    <wire from="(820,300)" to="(1070,300)"/>
-    <wire from="(820,620)" to="(820,740)"/>
+    <wire from="(820,300)" to="(950,300)"/>
+    <wire from="(820,620)" to="(820,750)"/>
     <wire from="(820,620)" to="(860,620)"/>
-    <wire from="(820,740)" to="(1070,740)"/>
+    <wire from="(820,750)" to="(950,750)"/>
+    <wire from="(850,770)" to="(850,780)"/>
+    <wire from="(850,780)" to="(860,780)"/>
+    <wire from="(850,830)" to="(850,840)"/>
+    <wire from="(850,840)" to="(860,840)"/>
+    <wire from="(970,520)" to="(1060,520)"/>
+    <wire from="(980,300)" to="(1070,300)"/>
+    <wire from="(980,750)" to="(1070,750)"/>
   </circuit>
   <circuit name="PuntajeRecord">
     <a name="appearance" val="logisim_evolution"/>
