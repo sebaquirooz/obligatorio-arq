@@ -1948,6 +1948,7 @@
     <wire from="(900,240)" to="(900,260)"/>
   </circuit>
   <circuit name="guardarNuevoEstado">
+    <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="guardarNuevoEstado"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(1090,250)" name="Splitter">
