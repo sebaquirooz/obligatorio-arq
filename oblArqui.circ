@@ -70,7 +70,6 @@
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(1170,670)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="Clock"/>
     </comp>
     <comp lib="0" loc="(120,70)" name="Clock">
       <a name="appearance" val="classic"/>
@@ -1989,7 +1988,7 @@
     <comp lib="0" loc="(1010,470)" name="Constant"/>
     <comp lib="0" loc="(1130,380)" name="Splitter">
       <a name="facing" val="west"/>
-      <a name="fanout" val="8"/>
+      <a name="fanout" val="5"/>
       <a name="incoming" val="5"/>
     </comp>
     <comp lib="0" loc="(1240,210)" name="Pin">
@@ -2179,9 +2178,6 @@
     <wire from="(1090,410)" to="(1110,410)"/>
     <wire from="(1090,420)" to="(1110,420)"/>
     <wire from="(1090,430)" to="(1110,430)"/>
-    <wire from="(1090,440)" to="(1110,440)"/>
-    <wire from="(1090,450)" to="(1110,450)"/>
-    <wire from="(1090,460)" to="(1110,460)"/>
     <wire from="(1130,380)" to="(1210,380)"/>
     <wire from="(1210,210)" to="(1210,290)"/>
     <wire from="(1210,210)" to="(1240,210)"/>
