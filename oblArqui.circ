@@ -257,6 +257,8 @@
     <wire from="(1700,770)" to="(1700,810)"/>
     <wire from="(1750,770)" to="(1750,830)"/>
     <wire from="(1800,770)" to="(1800,850)"/>
+    <wire from="(300,1090)" to="(710,1090)"/>
+    <wire from="(300,550)" to="(300,1090)"/>
     <wire from="(300,550)" to="(330,550)"/>
     <wire from="(310,500)" to="(310,590)"/>
     <wire from="(310,500)" to="(630,500)"/>
@@ -1888,7 +1890,7 @@
     <comp lib="0" loc="(1240,210)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
-      <a name="label" val="NEXT_BIT_TRIGGER"/>
+      <a name="label" val="MANDAR_SIG_BIT"/>
       <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1250,340)" name="Splitter">
@@ -1965,7 +1967,7 @@
     </comp>
     <comp lib="0" loc="(320,430)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="WRITE_ENABLE"/>
+      <a name="label" val="TICK_VELOCIDAD"/>
     </comp>
     <comp lib="0" loc="(320,460)" name="Pin">
       <a name="appearance" val="NewPins"/>
