@@ -68,20 +68,7 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(1170,670)" name="Tunnel">
-      <a name="facing" val="east"/>
-    </comp>
-    <comp lib="0" loc="(120,70)" name="Clock">
-      <a name="appearance" val="classic"/>
-    </comp>
-    <comp lib="0" loc="(1380,890)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Clock"/>
-    </comp>
-    <comp lib="0" loc="(140,70)" name="Tunnel">
-      <a name="label" val="Clock"/>
-    </comp>
-    <comp lib="0" loc="(490,160)" name="Splitter">
+    <comp lib="0" loc="(560,160)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="fanout" val="5"/>
       <a name="incoming" val="5"/>
