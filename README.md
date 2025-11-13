@@ -9,11 +9,11 @@
 
 4. Guardar nuevo estado ✅
 
-5. Bloquear movimientos ilegales
+5. Bloquear movimientos ilegales ✅
 
 6. Completar lineal/fila
 
-7. Modular velocidad
+7. Modular velocidad 
 
 8. Puntaje actual y récord registrado ✅
 
@@ -21,6 +21,6 @@
 
 10. Parpadeo (Perder)
 
-11. Indicador de caída
+11. Indicador de caída ✅
 
 12. Disminuir tiempo de espera
