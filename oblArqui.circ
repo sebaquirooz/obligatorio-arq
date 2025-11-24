@@ -2361,7 +2361,7 @@
       <a name="label" val="COL_3"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(2370,960)" name="Pin">
+    <comp lib="0" loc="(2420,960)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="colisionY"/>
@@ -2763,12 +2763,12 @@
     <wire from="(2250,970)" to="(2250,1020)"/>
     <wire from="(2250,970)" to="(2290,970)"/>
     <wire from="(2320,730)" to="(2320,770)"/>
-    <wire from="(2330,960)" to="(2350,960)"/>
-    <wire from="(2350,960)" to="(2350,1490)"/>
-    <wire from="(2350,960)" to="(2370,960)"/>
+    <wire from="(2330,960)" to="(2400,960)"/>
     <wire from="(2390,190)" to="(2390,300)"/>
     <wire from="(2390,190)" to="(2460,190)"/>
     <wire from="(2390,300)" to="(2850,300)"/>
+    <wire from="(2400,960)" to="(2400,1490)"/>
+    <wire from="(2400,960)" to="(2420,960)"/>
     <wire from="(2410,170)" to="(2460,170)"/>
     <wire from="(2410,210)" to="(2410,380)"/>
     <wire from="(2410,210)" to="(2460,210)"/>
@@ -2853,7 +2853,7 @@
     <wire from="(3560,130)" to="(3580,130)"/>
     <wire from="(3560,160)" to="(3580,160)"/>
     <wire from="(390,370)" to="(430,370)"/>
-    <wire from="(410,1490)" to="(2350,1490)"/>
+    <wire from="(410,1490)" to="(2400,1490)"/>
     <wire from="(410,390)" to="(410,1490)"/>
     <wire from="(410,390)" to="(430,390)"/>
     <wire from="(460,380)" to="(510,380)"/>
@@ -3151,98 +3151,6 @@
     <wire from="(890,210)" to="(900,210)"/>
     <wire from="(900,170)" to="(900,210)"/>
   </circuit>
-  <circuit name="NivelVelocidad">
-    <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="NivelVelocidad"/>
-    <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(200,260)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="Entrada"/>
-    </comp>
-    <comp lib="0" loc="(200,300)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="Reset"/>
-    </comp>
-    <comp lib="0" loc="(520,240)" name="Constant">
-      <a name="value" val="0xf"/>
-      <a name="width" val="6"/>
-    </comp>
-    <comp lib="0" loc="(520,320)" name="Constant">
-      <a name="value" val="0x1e"/>
-      <a name="width" val="6"/>
-    </comp>
-    <comp lib="0" loc="(880,180)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="velocidad1"/>
-      <a name="type" val="output"/>
-    </comp>
-    <comp lib="0" loc="(880,290)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="velocidad2"/>
-      <a name="type" val="output"/>
-    </comp>
-    <comp lib="0" loc="(880,390)" name="Pin">
-      <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="velocidad3"/>
-      <a name="type" val="output"/>
-    </comp>
-    <comp lib="1" loc="(740,270)" name="OR Gate"/>
-    <comp lib="1" loc="(740,390)" name="OR Gate"/>
-    <comp lib="1" loc="(830,180)" name="AND Gate"/>
-    <comp lib="1" loc="(850,290)" name="AND Gate"/>
-    <comp lib="3" loc="(580,230)" name="Comparator">
-      <a name="mode" val="unsigned"/>
-      <a name="width" val="6"/>
-    </comp>
-    <comp lib="3" loc="(580,310)" name="Comparator">
-      <a name="mode" val="unsigned"/>
-      <a name="width" val="6"/>
-    </comp>
-    <comp lib="4" loc="(360,220)" name="Counter">
-      <a name="appearance" val="classic"/>
-      <a name="max" val="0x1f"/>
-      <a name="ongoal" val="stay"/>
-      <a name="width" val="6"/>
-    </comp>
-    <wire from="(200,260)" to="(340,260)"/>
-    <wire from="(200,300)" to="(350,300)"/>
-    <wire from="(340,240)" to="(340,260)"/>
-    <wire from="(350,240)" to="(350,300)"/>
-    <wire from="(360,220)" to="(470,220)"/>
-    <wire from="(470,220)" to="(470,300)"/>
-    <wire from="(470,220)" to="(540,220)"/>
-    <wire from="(470,300)" to="(540,300)"/>
-    <wire from="(520,240)" to="(540,240)"/>
-    <wire from="(520,320)" to="(540,320)"/>
-    <wire from="(580,220)" to="(670,220)"/>
-    <wire from="(580,230)" to="(650,230)"/>
-    <wire from="(580,240)" to="(640,240)"/>
-    <wire from="(580,300)" to="(660,300)"/>
-    <wire from="(580,310)" to="(640,310)"/>
-    <wire from="(580,320)" to="(760,320)"/>
-    <wire from="(640,160)" to="(640,240)"/>
-    <wire from="(640,160)" to="(780,160)"/>
-    <wire from="(640,310)" to="(640,410)"/>
-    <wire from="(640,410)" to="(690,410)"/>
-    <wire from="(650,230)" to="(650,290)"/>
-    <wire from="(650,290)" to="(690,290)"/>
-    <wire from="(660,300)" to="(660,370)"/>
-    <wire from="(660,370)" to="(690,370)"/>
-    <wire from="(670,220)" to="(670,250)"/>
-    <wire from="(670,250)" to="(690,250)"/>
-    <wire from="(740,270)" to="(800,270)"/>
-    <wire from="(740,390)" to="(880,390)"/>
-    <wire from="(760,200)" to="(760,310)"/>
-    <wire from="(760,200)" to="(780,200)"/>
-    <wire from="(760,310)" to="(760,320)"/>
-    <wire from="(760,310)" to="(800,310)"/>
-    <wire from="(830,180)" to="(880,180)"/>
-    <wire from="(850,290)" to="(880,290)"/>
-  </circuit>
   <circuit name="DetectorFilaCompleta">
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="DetectorFilaCompleta"/>
@@ -3422,6 +3330,98 @@
     <wire from="(670,210)" to="(710,210)"/>
     <wire from="(670,280)" to="(710,280)"/>
     <wire from="(670,340)" to="(710,340)"/>
+  </circuit>
+  <circuit name="NivelVelocidad">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="NivelVelocidad"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(200,260)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Entrada"/>
+    </comp>
+    <comp lib="0" loc="(200,300)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Reset"/>
+    </comp>
+    <comp lib="0" loc="(520,240)" name="Constant">
+      <a name="value" val="0xf"/>
+      <a name="width" val="6"/>
+    </comp>
+    <comp lib="0" loc="(520,320)" name="Constant">
+      <a name="value" val="0x1e"/>
+      <a name="width" val="6"/>
+    </comp>
+    <comp lib="0" loc="(880,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="velocidad1"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(880,290)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="velocidad2"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(880,390)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="velocidad3"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="1" loc="(740,270)" name="OR Gate"/>
+    <comp lib="1" loc="(740,390)" name="OR Gate"/>
+    <comp lib="1" loc="(830,180)" name="AND Gate"/>
+    <comp lib="1" loc="(850,290)" name="AND Gate"/>
+    <comp lib="3" loc="(580,230)" name="Comparator">
+      <a name="mode" val="unsigned"/>
+      <a name="width" val="6"/>
+    </comp>
+    <comp lib="3" loc="(580,310)" name="Comparator">
+      <a name="mode" val="unsigned"/>
+      <a name="width" val="6"/>
+    </comp>
+    <comp lib="4" loc="(360,220)" name="Counter">
+      <a name="appearance" val="classic"/>
+      <a name="max" val="0x1f"/>
+      <a name="ongoal" val="stay"/>
+      <a name="width" val="6"/>
+    </comp>
+    <wire from="(200,260)" to="(340,260)"/>
+    <wire from="(200,300)" to="(350,300)"/>
+    <wire from="(340,240)" to="(340,260)"/>
+    <wire from="(350,240)" to="(350,300)"/>
+    <wire from="(360,220)" to="(470,220)"/>
+    <wire from="(470,220)" to="(470,300)"/>
+    <wire from="(470,220)" to="(540,220)"/>
+    <wire from="(470,300)" to="(540,300)"/>
+    <wire from="(520,240)" to="(540,240)"/>
+    <wire from="(520,320)" to="(540,320)"/>
+    <wire from="(580,220)" to="(670,220)"/>
+    <wire from="(580,230)" to="(650,230)"/>
+    <wire from="(580,240)" to="(640,240)"/>
+    <wire from="(580,300)" to="(660,300)"/>
+    <wire from="(580,310)" to="(640,310)"/>
+    <wire from="(580,320)" to="(760,320)"/>
+    <wire from="(640,160)" to="(640,240)"/>
+    <wire from="(640,160)" to="(780,160)"/>
+    <wire from="(640,310)" to="(640,410)"/>
+    <wire from="(640,410)" to="(690,410)"/>
+    <wire from="(650,230)" to="(650,290)"/>
+    <wire from="(650,290)" to="(690,290)"/>
+    <wire from="(660,300)" to="(660,370)"/>
+    <wire from="(660,370)" to="(690,370)"/>
+    <wire from="(670,220)" to="(670,250)"/>
+    <wire from="(670,250)" to="(690,250)"/>
+    <wire from="(740,270)" to="(800,270)"/>
+    <wire from="(740,390)" to="(880,390)"/>
+    <wire from="(760,200)" to="(760,310)"/>
+    <wire from="(760,200)" to="(780,200)"/>
+    <wire from="(760,310)" to="(760,320)"/>
+    <wire from="(760,310)" to="(800,310)"/>
+    <wire from="(830,180)" to="(880,180)"/>
+    <wire from="(850,290)" to="(880,290)"/>
   </circuit>
   <circuit name="ManejoVelocidades">
     <a name="appearance" val="logisim_evolution"/>
