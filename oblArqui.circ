@@ -227,16 +227,16 @@
     <comp lib="8" loc="(1025,885)" name="Text">
       <a name="text" val="Puntaje Record"/>
     </comp>
-    <comp lib="8" loc="(498,242)" name="Text">
+    <comp lib="8" loc="(495,240)" name="Text">
       <a name="text" val="- velocidad 3: mas de 900 puntos"/>
     </comp>
-    <comp lib="8" loc="(508,172)" name="Text">
+    <comp lib="8" loc="(505,170)" name="Text">
       <a name="text" val="Configurar el reloj en 8hz para iniciar el juego"/>
     </comp>
-    <comp lib="8" loc="(508,197)" name="Text">
+    <comp lib="8" loc="(505,195)" name="Text">
       <a name="text" val="- velocidad 1: menos de 400 puntos"/>
     </comp>
-    <comp lib="8" loc="(508,222)" name="Text">
+    <comp lib="8" loc="(505,220)" name="Text">
       <a name="text" val="- velocidad 2: entre 400 y 900 puntos"/>
     </comp>
     <comp lib="8" loc="(760,890)" name="Text">
@@ -3174,12 +3174,12 @@
       <a name="label" val="Reset"/>
     </comp>
     <comp lib="0" loc="(520,240)" name="Constant">
-      <a name="value" val="0x190"/>
-      <a name="width" val="10"/>
+      <a name="value" val="0xf"/>
+      <a name="width" val="6"/>
     </comp>
     <comp lib="0" loc="(520,320)" name="Constant">
-      <a name="value" val="0x384"/>
-      <a name="width" val="10"/>
+      <a name="value" val="0x1e"/>
+      <a name="width" val="6"/>
     </comp>
     <comp lib="0" loc="(880,180)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -3205,17 +3205,17 @@
     <comp lib="1" loc="(850,290)" name="AND Gate"/>
     <comp lib="3" loc="(580,230)" name="Comparator">
       <a name="mode" val="unsigned"/>
-      <a name="width" val="10"/>
+      <a name="width" val="6"/>
     </comp>
     <comp lib="3" loc="(580,310)" name="Comparator">
       <a name="mode" val="unsigned"/>
-      <a name="width" val="10"/>
+      <a name="width" val="6"/>
     </comp>
     <comp lib="4" loc="(360,220)" name="Counter">
       <a name="appearance" val="classic"/>
-      <a name="max" val="0x3ff"/>
+      <a name="max" val="0x1f"/>
       <a name="ongoal" val="stay"/>
-      <a name="width" val="10"/>
+      <a name="width" val="6"/>
     </comp>
     <wire from="(200,260)" to="(340,260)"/>
     <wire from="(200,300)" to="(350,300)"/>
@@ -3461,15 +3461,13 @@
     <comp lib="1" loc="(490,590)" name="OR Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(520,650)" name="AND Gate">
-      <a name="size" val="30"/>
-    </comp>
     <comp lib="1" loc="(780,550)" name="OR Gate">
       <a name="inputs" val="3"/>
     </comp>
     <comp loc="(380,550)" name="NivelVelocidad"/>
-    <comp loc="(710,460)" name="ReductorFrecuencia4"/>
-    <comp loc="(710,550)" name="ReductorFrecuencia2"/>
+    <comp loc="(710,460)" name="ReductorFrecuencia8"/>
+    <comp loc="(710,550)" name="ReductorFrecuencia4"/>
+    <comp loc="(710,640)" name="ReductorFrecuencia8"/>
     <wire from="(140,540)" to="(150,540)"/>
     <wire from="(140,580)" to="(150,580)"/>
     <wire from="(150,540)" to="(150,550)"/>
@@ -3481,13 +3479,13 @@
     <wire from="(380,480)" to="(380,550)"/>
     <wire from="(380,480)" to="(490,480)"/>
     <wire from="(380,570)" to="(400,570)"/>
-    <wire from="(380,590)" to="(380,660)"/>
-    <wire from="(380,660)" to="(400,660)"/>
+    <wire from="(380,590)" to="(400,590)"/>
     <wire from="(400,490)" to="(400,570)"/>
     <wire from="(400,490)" to="(460,490)"/>
     <wire from="(400,570)" to="(490,570)"/>
-    <wire from="(400,580)" to="(400,660)"/>
+    <wire from="(400,580)" to="(400,590)"/>
     <wire from="(400,580)" to="(460,580)"/>
+    <wire from="(400,590)" to="(400,660)"/>
     <wire from="(400,660)" to="(490,660)"/>
     <wire from="(410,420)" to="(410,460)"/>
     <wire from="(410,460)" to="(410,550)"/>
@@ -3499,12 +3497,14 @@
     <wire from="(440,510)" to="(460,510)"/>
     <wire from="(440,600)" to="(440,630)"/>
     <wire from="(440,600)" to="(460,600)"/>
-    <wire from="(520,650)" to="(720,650)"/>
+    <wire from="(440,630)" to="(440,680)"/>
+    <wire from="(440,680)" to="(490,680)"/>
     <wire from="(710,460)" to="(720,460)"/>
     <wire from="(710,550)" to="(730,550)"/>
+    <wire from="(710,640)" to="(720,640)"/>
     <wire from="(720,460)" to="(720,530)"/>
     <wire from="(720,530)" to="(730,530)"/>
-    <wire from="(720,570)" to="(720,650)"/>
+    <wire from="(720,570)" to="(720,640)"/>
     <wire from="(720,570)" to="(730,570)"/>
     <wire from="(780,550)" to="(810,550)"/>
   </circuit>
